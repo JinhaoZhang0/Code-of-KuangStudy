@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        var arr = [1,2,3,4,5,6]; //通过下标取值和赋值 arr[0]
+        console.log(arr)
+        arr.length;
+        //改变数组长度,数组长度可以发生改变
+        arr.length = 10;
+        arr.indexOf(2)          //通过元素获得下标索引
+        arr.slice(0,3)          //截取Array的一部分，返回一个新的数组，相当于java中的substring
+        arr.push("1","2");      //压入到尾部
+        arr.pop()               //弹出尾部的一个元素
+        arr.unshift("a","b")    //压入到头部
+        arr.shift()             //弹出头部的一个元素
+        arr.sort()              //排序
+        arr.reverse()           //元素反转
+        arr.concat([1,2])       //并没有修改数组，只是会返回一个新的数组
+        arr.join('-')           //打印拼接数组，使用提供的字符相连接
+        arr = [[1,2],[3,4],[5]] //多维数组
+        arr.fill(1)             //填充数组
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

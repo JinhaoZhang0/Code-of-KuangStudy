@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 
+
 # Log file
 *.log
 
@@ -21,3 +22,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+#IDEA
+.idea
+*.iml
+target/
+out/
+bin/
+tmp/
+
+# mac
+.DS_Store
+
+# Excluded File
+special_structure/
+openclass/
+7plus.SMBMS/
+notes/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        'use strict';
+        var arr = [3,4,5];
+        arr.name = "213";
+
+        //遍历对象的key  包括name
+        for (let x in arr){
+            console.log(x);
+        }
+
+        //遍历array
+        for (let x of arr){
+            console.log(x);
+        }
+
+        //遍历map
+        var map = new Map([["Tom",100],["Jack",90],["Peter",60]]);
+        for (let x of map){
+            console.log(x)
+        }
+
+        //遍历set
+        var set = new Set([5,6,7])
+        for (let x of set){
+            console.log(x)
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

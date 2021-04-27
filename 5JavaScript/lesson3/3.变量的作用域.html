@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        // // 在javascript中， var定义变量
+        // "use strict"
+        // var x = 'xxx';
+        // alert(x);
+        // alert(window.x); //默认所有的全局变量，都会自动绑定在window对象下：
+        //
+        // var x = 'xxx';
+        // window.alert(x);
+        // var old_alert = window.alert;
+        //
+        // //old_alert(x);
+        //
+        // window.alert = function(){
+        //
+        // }
+        // //发现 alert() 失效了
+        // window.alert(123);
+        //
+        // //恢复
+        // window.alert = old_alert;
+        // window.alert(456)
+        //
+        // function aaa() {
+        //     for (let i = 0; i < 100; i++) {
+        //         console.log(i);
+        //     }
+        //     console.log(i+1); //Uncaught ReferenceError: i is not defined
+        // }
+
+        const PI = '3.14'; //只读变量
+        console.log(PI);
+        PI = '213' ;
+        console.log(PI);
+
+        // function qj() {
+        //     var x = "x" + y;
+        //     console.log(x)
+        //     var y = 'y';
+        // }
+        //
+        // function qj2() {
+        //     var x = 1,
+        //         y = x + 1,
+        //         z,i //undefined
+        //     //之后随意用
+        // }
+
+        // x = x + 2 //Uncaught ReferenceError: x is not defined
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

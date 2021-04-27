@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function getAge() {
+            //今年 - 出生年
+            var now = new Date().getFullYear();
+            return now - this.birth;
+        }
+
+        var kuangshen = {
+            name: 'jinhao',96,
+            //方法
+            age: getAge
+        }
+
+        getAge.apply(kuangshen,[]); //this，指向了kuangshen，参数为空
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        //两者等价
+        function abs(x) {
+            //手动抛出异常来判断  从而规避其不严谨的传参问题
+            if (typeof x !== 'number'){
+                throw 'Not a number!';
+            }
+
+            //argument 代表传进来的所有参数，是一个数组
+            for (var i=0; i<arguments.length; i++){
+                console.log(arguments[i]);
+            }
+
+            if (x >= 0) {
+                return x;
+            } else {
+                return -x;
+            }
+        }
+        //参数问题：javascript可以传任意个参数，也可以不传参数～
+
+
+
+        //匿名函数，但是可以把结果赋值给abs，通过abs就可以调用函数！
+        // var abs = function(x) {
+        //     if (x >= 0) {
+        //         return x;
+        //     } else {
+        //         return -x;
+        //     }
+        // }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

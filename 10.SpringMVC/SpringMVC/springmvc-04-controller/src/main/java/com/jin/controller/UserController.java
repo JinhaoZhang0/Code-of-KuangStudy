@@ -31,6 +31,6 @@ public class UserController {
         System.out.println(user);
         return "test";
     }
-    
+
 
 }

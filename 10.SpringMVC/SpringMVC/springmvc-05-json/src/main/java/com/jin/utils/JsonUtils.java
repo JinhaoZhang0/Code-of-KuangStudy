@@ -7,6 +7,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.text.SimpleDateFormat;
 
 public class JsonUtils {
+    public static String getJson(Object object) {
+        return getJson(object,"yyyy-MM-dd HH:mm:ss");
+    }
 
     public static String getJson(Object object, String dataFormat) {
         ObjectMapper mapper = new ObjectMapper();

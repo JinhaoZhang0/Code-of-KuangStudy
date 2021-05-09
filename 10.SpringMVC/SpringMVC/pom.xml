@@ -15,6 +15,7 @@
         <module>springmvc-04-controller</module>
         <module>springmvc-05-json</module>
         <module>springmvc-06-ajax</module>
+        <module>springmvc-07-intercept</module>
     </modules>
 
     <properties>
@@ -65,6 +66,12 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.8</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.aspectj</groupId>-->
+<!--            <artifactId>aspectjweaver</artifactId>-->
+<!--            <version>1.9.6</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

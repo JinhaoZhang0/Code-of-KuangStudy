@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var info = {
+            title:"学相伴",
+            link:"http://www.kuangstudy.com",
+            go:function(){
+                console.log("我骑着小黄车来上班");
+            }
+        };
+
+        //es6简写
+        //因为对象是key:value存在
+        //1: 如果key和变量的名字一致，可以只定义一次即可
+        //2: 如果value是一个函数，可以把`:function`全部去除，只剩下括号即可
+        let title = "学相伴";
+        let link = "http://www.kuangstudy.com";
+        let info2 = {
+            title,
+            link,
+            go(){
+                console.log("我骑着小黄车来上班");
+            }
+        };
+        console.log(info2);
+    </script>
+</body>
+</html>

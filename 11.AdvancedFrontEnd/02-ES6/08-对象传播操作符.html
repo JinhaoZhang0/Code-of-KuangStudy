@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //对象传播操作符 ...
+        let person = {
+            name:"学相伴",
+            address:"广东",
+            link:"htpps://www.kuangstudy.com",
+            phone:1234567,
+            go(){
+                console.log("开始上班了");
+            }
+        }
+        //解构出来,剩余部分传给person2
+        var {name,address,...person2} = person;
+        console.log(name);
+        console.log(address);
+        console.log(person2);
+    </script>
+</body>
+</html>

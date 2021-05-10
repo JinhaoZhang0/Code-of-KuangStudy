@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //lambda,箭头函数-重点（在未来的项目开发中：比如小程序，uniapp，一些常见的脚手架大量使用）
+        var sum = function(a,b) {
+            return a + b;
+        };
+        //箭头函数 - 改进1
+        var sum = (a,b) => {
+            return a + b;
+        }
+        //箭头函数 - 改进2
+        var sum = (a,b) => a + b;
+        //如果逻辑代码仅有return可以直接省去，但有逻辑体则不行，比如：
+        //如果只有一个参数可以省略括号
+        var sum2 = (a,b) => {
+            var num = a+b;
+            return num;
+        }
+        
+        var arr = [1,2,3,4,5,6];
+        var newarr = arr.map(function(obj){
+            return obj*2;
+        });
+        //改变
+        var newarr = arr.map((obj)=>obj*2);
+    </script>
+</body>
+</html>

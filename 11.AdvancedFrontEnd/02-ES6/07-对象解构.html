@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //对象是key:value存在，获取对象属性和方法的方式有两种
+        //1:通过 .
+        //2:通过 []
+        let title = "学相伴";
+        let link = "http://www.kuangstudy.com";
+        let info2 = {
+            title,
+            link,
+            go(){
+                console.log("我骑着小黄车来上班");
+            }
+        };
+        //通过.的方式
+        console.log(info2.title);
+        info2.go();
+
+        //通过[]的方式
+        console.log(info2["title"]);
+        info2["go"]();
+
+        //es6对象解构 - 其实就是快速获取属性和方法的一种形式
+        let {title,link,go} = info2;
+        //还原代码
+        let title = info2.title;
+        let link = info2.link;
+
+        // //在实际项目中一般使用点，会方便许多，但是如果key是变量的话就不能使用点了，js会理解变量为对象的key值，造成混淆
+        var v3 = obj[key];//key是一个变量
+    </script>
+</body>
+</html>

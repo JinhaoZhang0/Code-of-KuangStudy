@@ -34,6 +34,13 @@ tmp/
 # mac
 .DS_Store
 
+# Vue
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Excluded File
 special_structure/
 openclass/

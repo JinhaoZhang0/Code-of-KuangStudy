@@ -2,20 +2,20 @@
 
 > A Vue.js project
 
-## Build Setup
+My first Vue.js project combining with ElementUI.
+
+## Dependencies & Plugins
 
 ``` bash
+# install vue-router
+npm install vue-router --save-dev
+#install element-ui
+npm i element-ui -S
 # install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
+# install SASS loader
+cnpm install sass-loader node-sass --save-dev
+# run to test
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

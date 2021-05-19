@@ -18,7 +18,7 @@ public class JDBCController {
     //没有实体类，数据库中的东西，怎么获取？ MAP
     @GetMapping("/userList")
     public List<Map<String,Object>> userList(){
-        String sql = "select * from user";
+        String sql = "select * from mybatis.user";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         return maps;
     }

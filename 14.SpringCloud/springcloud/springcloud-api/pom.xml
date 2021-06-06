@@ -11,10 +11,6 @@
 
     <artifactId>springcloud-api</artifactId>
 
-    <properties>
-        <maven.compiler.source>13</maven.compiler.source>
-        <maven.compiler.target>13</maven.compiler.target>
-    </properties>
 
     <!--当前的Module自己需要的依赖，如果父依赖中已经配置了版本，这里就不用写了-->
     <dependencies>

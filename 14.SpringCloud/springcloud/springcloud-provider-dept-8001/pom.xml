@@ -11,11 +11,6 @@
 
     <artifactId>springcloud-provider-dept-8001</artifactId>
 
-    <properties>
-        <maven.compiler.source>13</maven.compiler.source>
-        <maven.compiler.target>13</maven.compiler.target>
-    </properties>
-
     <dependencies>
         <!--我们需要拿到实体类，所以要配置api module-->
         <dependency>

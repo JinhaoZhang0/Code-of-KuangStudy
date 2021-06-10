@@ -89,4 +89,8 @@ public class MyRandomRule extends AbstractLoadBalancerRule {
         return choose(getLoadBalancer(), key);
     }
 
+    @Override
+    public void initWithNiwsConfig(IClientConfig iClientConfig) {
+
+    }
 }

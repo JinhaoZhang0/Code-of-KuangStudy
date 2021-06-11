@@ -23,8 +23,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eurekatest7001.com:7001/eureka/,http://eurekatest7002.com:7002/eureka/,http://eurekatest7003.com:7003/eureka/
-    instance:
-      instance-id: springcloud-provider-dept-8001 #修改Eureka上的默认描述信息
+  instance:
+    instance-id: springcloud-provider-dept-8001 #修改Eureka上的默认描述信息
 
 #info配置
 info:

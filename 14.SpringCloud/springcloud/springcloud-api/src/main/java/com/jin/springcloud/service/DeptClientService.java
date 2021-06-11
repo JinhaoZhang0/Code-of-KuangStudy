@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT")
+//@FeignClient:微服务客户端注解,value:指定微服务的名字,这样就可以使Feign客户端直接找到对应的微服务
+@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)//fallbackFactory指定降级配置类
 public interface DeptClientService {
     @GetMapping("/dept/get/{id}")
     Dept queryById(@PathVariable("id") Long id);

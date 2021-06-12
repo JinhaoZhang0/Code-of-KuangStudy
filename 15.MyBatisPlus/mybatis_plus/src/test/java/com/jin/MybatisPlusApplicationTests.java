@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 @SpringBootTest
@@ -78,5 +80,30 @@ class MybatisPlusApplicationTests {
 
         //可以使用自旋锁多次尝试提交
         userMapper.updateById(user); //如果没有乐观锁就会覆盖插队线程的值
+    }
+
+    // 测试查询
+    @Test
+    public void testSelectById() {
+        User user = userMapper.selectById(1L);
+        System.out.println(user);
+    }
+
+    // 测试批量查询
+    @Test
+    public void testSelectBatchIds() {
+        List<User> users = userMapper.selectBatchIds(Arrays.asList(1, 2, 3));
+        users.forEach(System.out::println);
+    }
+
+    // 测试条件查询 map
+    @Test
+    public void testSelectByMap() {
+        HashMap<String, Object> map = new HashMap<>();
+        //自定义要查询的条件
+        map.put("name","狂神说");
+        map.put("age",19);
+        List<User> users = userMapper.selectByMap(map);
+        users.forEach(System.out::println);
     }
 }

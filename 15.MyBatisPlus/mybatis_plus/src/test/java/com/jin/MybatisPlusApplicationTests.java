@@ -1,5 +1,6 @@
 package com.jin;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jin.mapper.UserMapper;
 import com.jin.pojo.User;
 import org.junit.jupiter.api.Test;
@@ -105,5 +106,17 @@ class MybatisPlusApplicationTests {
         map.put("age",19);
         List<User> users = userMapper.selectByMap(map);
         users.forEach(System.out::println);
+    }
+
+    //测试分页查询
+    @Test
+    public void testPage() {
+        // 参数一：当前页
+        // 参数二：页面大小
+        Page<User> page = new Page<>(1,5);
+        userMapper.selectPage(page,null);
+
+        page.getRecords().forEach(System.out::println);
+        System.out.println(page.getTotal());
     }
 }

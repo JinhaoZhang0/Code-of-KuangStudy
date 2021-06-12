@@ -23,4 +23,16 @@ class MybatisPlusApplicationTests {
         users.forEach(System.out::println);
     }
 
+    //测试插入
+    @Test
+    public void testInsert() {
+        User user = new User();
+        user.setName("狂神说Java");
+        user.setAge(3);
+        user.setEmail("24736743@qq.com");
+
+        int result = userMapper.insert(user); //帮我们自动生成id
+        System.out.println(result); //受影响的行数
+        System.out.println(user); //发现，id会自动回填
+    }
 }

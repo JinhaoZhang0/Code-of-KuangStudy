@@ -119,4 +119,24 @@ class MybatisPlusApplicationTests {
         page.getRecords().forEach(System.out::println);
         System.out.println(page.getTotal());
     }
+
+    //测试删除
+    @Test
+    public void testDeleteById() {
+        userMapper.deleteById(7L);
+    }
+
+    //测试批量删除
+    @Test
+    public void testDeleteBatchIds() {
+        userMapper.deleteBatchIds(Arrays.asList(8L,9L));
+    }
+
+    //通过map删除
+    @Test
+    public void testDeleteMap() {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name","狂神说Java");
+        userMapper.deleteByMap(map);
+    }
 }
